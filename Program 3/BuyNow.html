@@ -1,0 +1,173 @@
+<!DOCTYPEHTML>
+<html>
+<head>
+  <a href = "index.html">
+<img src= "Compaq-logo.png" width= "100" height = "80">
+<body>
+  <link rel = "stylesheet" href = "NewStyleSheet.css">
+
+</head>
+
+
+
+<div class = "grid">
+
+
+
+<div class = "nav"> <nav>
+  <ul>
+
+
+
+    <li> <a href = "#">Laptops </a>
+      <ul>
+        <li> <a href= "Program3-2.html"> Surafce </a></li>
+        <li> <a href "#"> MacBooks </a></li>
+      </ul>
+    </li>
+
+    <li><a href = "#"> Desktops </a>
+    <ul>
+    <li> <a href "#"> Gaming</a></li>
+    <li> <a href "#"> Touchscreen </a></li>
+    <li> <a href "#"> Mac</a></li> </ul>
+    </li>
+    <li><a href = "#"> Programs </a>
+    <ul>
+        <li> <a href "#"> Word </a></li>
+        <li> <a href "#"> Excel </a></li>
+        <li> <a href "#"> PowerPoint</a></li>
+      </ul>
+    </li>
+    <li><a href = "#"> Accessories</a>
+      <ul>
+        <li> <a href = "#"> Headsets </a></li>
+        <li> <a href = "#"> Keyboards </a></li>
+        <li> <a href ="#">  Mice </a> </li>
+        <li> <a href = "#"> Speakers </a></li>
+      </ul>
+      </li>
+    <li><a href = "#"> Deals </a> </li>
+
+<li>
+<input type = "text" placeholder = "Search..."></li>
+</ul>
+</div>
+ </nav>
+<div class = "form">
+ <form action="Purchase-Response.html" method="get">
+<table width = "400px">
+<tr>
+  <td valign = "top">
+  <label for = "firstName" id = "lblfirstName"> First Name </label>
+</td>
+      <td valign = "top">
+<input type= "text" name = "firstName" id = "firstName"
+  required
+  pattern = "[a-zA-Z]{4,20}"
+  title = "First Name must only be letters and at least 4 letters"
+  />
+</td>
+
+
+<tr>
+  <td valign = "top">
+    <label for = "lastName" id = "lblLastName"> Last Name </label>
+  </td>
+  <td valign = "top">
+     <input type= "text" name = "lastName" id = "lastName"
+     required
+
+     pattern = "[a-zA-Z]{4,20}"
+     title = "Letters Only"
+     />
+</td>
+  <tr>
+    <td valign = "top">
+    <label for = "Address" id = "lblAddress"> Address </label>
+  </td>
+    <td valign = "top">
+      <input type = "text" name = "Address" id = "Address" maxlength = "60" size "40"
+      required
+          pattern = "[a-zA-Z0-9_ ]{4,20}"
+      title = "Must be letters and numbers"
+      />
+      </td>
+<tr>
+  <td valign = "top">
+    <label for = "State" id = "lblState" > State </label>
+  </td>
+  <td valign = "top">
+    <input type = "text" name= "State" id = "State" maxlength = "60" size  "40"
+    required
+    pattern = "[a-zA-Z]{4,30}"
+    />
+  </td>
+<tr>
+  <td valign = "top">
+    <label for = "zipCode" id = "lblZipCode"> Zip Code <label>
+    </td>
+    <td valign = "top">
+      <input type = "text" name= "ZipCode" id = "zipCode" maxlength = "5" size = "10"
+      required
+      pattern = "[0-9]{5}" />
+</td>
+<h3> Product Information </h3>
+
+  <tr>
+    <td valign = "bottom">
+      <br>
+      <label> Surface Type </label>
+    </td>
+    <td valign = "bottom">
+
+      <select name = "style">
+        <option value = "Surface Laptop 3"> Surface Laptop 3 </option>
+        <option value = "Surface Pro 6"> Surface Pro 6 </option>
+        <option value = "Surface Pro X"> Surface Pro X </option>
+      </select>
+    </td>
+  </tr>
+
+
+  <tr>
+    <td valign = "bottom">
+      <br>
+      <label> Processor Type </label></td>
+
+        <td valign = "bottom">
+
+        <select name = "style">
+          <option value = "Intel Core i5"> Intel Core i5</option>
+          <option value = "Intel Core i7"> Intel Core i7</option>
+          <option value = "AMD"> AMD </option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td valign = "bottom">
+        <br>
+        <label> Color </label></td>
+
+          <td valign = "bottom">
+
+          <select name = "style">
+            <option value = "Red"> Red</option>
+            <option value = " Matte Black"> Matte Black</option>
+            <option value = "Silver"> Silver </option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="10" style= "text-align:center">
+<input type= "submit" value = "Purchase"/>
+<p id = "msg"></p>
+
+</td>
+</tr>
+
+</form>
+</div>
+</div>
+
+</html>
